@@ -1,0 +1,39 @@
+@use 'styles/vars';
+
+.presentation-main-container {
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+    .right-container {
+        padding: 30px;
+    
+        img {
+            width: 600px;
+            border-radius: 10px;
+        }
+    }
+    
+    .left-container {
+        align-self: center;
+        padding: 30px;
+        
+        div {
+            font-size: 80px;
+            color: #341d1e;
+            font-weight: 800;
+            font-family: 'Open Sans', sans-serif;
+        }
+    
+        span {
+            display: inline-block;
+            margin-top: 20px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            line-height: 1.4em;
+        }
+    }
+}
+
+
