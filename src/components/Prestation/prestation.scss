@@ -1,17 +1,18 @@
 
 .prestation-main-container {
     height: 500px;
-    background-color: #daab9a;
-    margin-top: 20px;
     padding: 0 60px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 50px auto 0 auto;
+    max-width: 80%;
 }
 
 .card {
+    position: relative;
     flex-grow: 1;
-    max-width: 300px;
+    max-width: 250px;
     height: 320px;
     padding: 20px;
     margin: 0 20px;
@@ -21,24 +22,48 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
-    img {
-        width: 44px;
+    .card-img {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        transform: translate(-50%,-50%);
+        clip-path: ellipse(45% 45% at 50% 50%);
+        border: 1px solid red;
     }
 
     h3 {
         text-transform: uppercase;
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
-        font-size: 20px;
-        margin: 40px 0;
-        color: #341D1E;
+        font-size: 16px;
+        color: #926C61;
+        margin-bottom: 20px;
     }
 
     span {
+        display: inline-block;
+        margin-bottom: 20px;
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
         line-height: 1.4em;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #F59B90;
+            text-decoration: none;
+        }
     }
 }

@@ -1,53 +1,71 @@
 @use 'styles/vars';
 
 header {
-    height: 80px;
-    padding: 15px 30px;
+    display: flex   ;
+    flex-direction: column;
+    height: 500px;
+    padding: 15px 60px;
+    margin: 0 auto;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets//images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    align-items: flex-start;
 }
 
 .logo {
+    z-index: 500;
     display: flex;
     align-items: center;
-
-    img {
-        height: 80px;
-    }
-}
-
-.logo-text {
-    div {
-        font-size: 20px;
-        font-weight: 700;
-        color: #BD765C;
-        font-family: 'Open Sans', sans-serif;
-        margin-bottom: 2px;
-    }
-    span {
-        font-weight: 700;
-        color: #BD765C;
-        font-family: 'Open Sans', sans-serif;
-    }
 }
 
 .nav-bar {
+    z-index: 500;
     display: flex;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
 
     li {
         padding: 10px 15px;
-        margin: 8px;
-        font-weight: 600;
+        margin: 10px;
+        font-weight: 400;
         font-family: 'Open Sans', sans-serif;
-        color: #341d1e;
-        font-size: 16px;
+        color: white;
+        font-size: 14px;
     }
 
     .contact-button {
         color: white;
-        background-color: #BD765C;
         border-radius: 10px;
+        border: 1px solid white;
+    }
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 100px auto;
+
+    h1 {
+        font-size: 60px;
+        color: white;
+        font-weight: 800;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 50px;
+    }
+
+    span {
+        color: rgba(255, 255, 255, 0.616);
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.3em;
     }
 }
